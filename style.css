@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  overflow: hidden;
+}
+.one {
+  height: 100vh;
+  width: 20vw;
+  background-color: rgb(203, 203, 203);
+  display: flex;
+  justify-content: center;
+}
+.one div {
+  height: 8%;
+  width: 70%;
+  background-color: rgb(118, 118, 232);
+  margin-top: 5%;
+}
+.two {
+  height: 100vh;
+  width: 100%;
+}
+.nav {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.up-txt {
+  height: 2.75rem;
+  width: 2.75rem;
+  background-color: rgb(203, 203, 203);
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+.empty-box {
+  height: 70%;
+  width: 15%;
+  background-color: rgb(118, 118, 232);
+  display: none;
+}
+.three {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt-bg {
+  height: 40%;
+  width: 70%;
+  background-color: rgb(197, 173, 173);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.txt1 {
+  width: 12rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.txt2 {
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(203, 203, 203);
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgb(203, 203, 203);
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-top: -8rem;
+}
+@media (max-width: 600px) {
+  .one {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .empty-box {
+    display: block;
+    height: 2.75rem;
+    width: 8rem;
+    margin-left: 1.5rem;
+  }
+  .three {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .txt-bg {
+    height: 18rem;
+    width: 100%;
+    background-color: rgb(203, 203, 203);
+  }
+  .txt2 {
+    display: none;
+  }
+  .circle {
+    margin-right: 88%;
+  }
+}
